@@ -16,7 +16,7 @@ resource "aws_security_group" "this" {
 }
 
 resource "aws_security_group_rule" "ingress" {
-  for_each = var.source_security_groups
+  for_each = var.ingress_security_groups
 
   security_group_id = aws_security_group.this.id
 
