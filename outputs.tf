@@ -1,5 +1,5 @@
-output "aws_security_group" {
-  description = "The Security Group used by the ALB"
+output "security_group" {
+  description = "Security group used by the ALB"
   value       = aws_security_group.this
 }
 
