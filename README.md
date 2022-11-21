@@ -7,7 +7,7 @@ This module creates a private ALB, a default ALB listener (with HTTP protocol), 
 ```tf
 module "alb" {
   source  = "babbel/alb-for-vpc-internal-requests/aws"
-  version = "~> 1.1"
+  version = "~> 1.1.1"
 
   name = "example"
 

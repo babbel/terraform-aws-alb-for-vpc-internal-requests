@@ -4,6 +4,7 @@ provider "aws" {
 
 module "alb" {
   source  = "./.."
+  source = "./.."
 
   name = "example"
 

@@ -13,6 +13,8 @@ variable "ingress_security_groups" {
       id = string
     })
   )
+
+  default = {}
 }
 
 variable "name" {
