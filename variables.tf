@@ -5,18 +5,6 @@ variable "ingress_port" {
   default = 80
 }
 
-variable "ingress_security_groups" {
-  description = "Map of security groups the ALB will receive requests from"
-
-  type = map(
-    object({
-      id = string
-    })
-  )
-
-  default = {}
-}
-
 variable "name" {
   description = "Name of the ALB"
 

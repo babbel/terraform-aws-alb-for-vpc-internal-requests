@@ -14,10 +14,6 @@ module "alb" {
     { id = "subnet-12345678" },
   ]
 
-  ingress_security_groups = {
-    some-service = { id = "sg-12345678" }
-  }
-
   target_group = { arn = "arn:aws:elasticloadbalancing:local:123456789012:targetgroup/some-service/0123456789abcdef" }
 
   tags = {

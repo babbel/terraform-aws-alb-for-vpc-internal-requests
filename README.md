@@ -14,10 +14,6 @@ module "alb" {
   vpc     = aws_vpc.this
   subnets = [aws_subnet.private_a, aws_subnet.private_b]
 
-  ingress_security_groups = {
-    some-service = aws_security_group.some_service
-  }
-
   target_group = aws_lb_target_group.example
 
   tags = {

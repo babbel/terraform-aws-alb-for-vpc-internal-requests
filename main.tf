@@ -15,22 +15,6 @@ resource "aws_security_group" "this" {
   }
 }
 
-resource "aws_security_group_rule" "ingress" {
-  for_each = var.ingress_security_groups
-
-  security_group_id = aws_security_group.this.id
-
-  type                     = "ingress"
-  source_security_group_id = each.value.id
-  protocol                 = "tcp"
-  from_port                = var.ingress_port
-  to_port                  = var.ingress_port
-
-  lifecycle {
-    create_before_destroy = true
-  }
-}
-
 resource "aws_security_group_rule" "egress" {
   security_group_id = aws_security_group.this.id
 
