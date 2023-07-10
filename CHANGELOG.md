@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.0
+
+- [drop aws_security_group_rule attribute](https://github.com/babbel/terraform-aws-alb-for-vpc-internal-requests/pull/20)
+
 ## v1.2.0
 
 - [Relax version constraints for modules](https://github.com/babbel/terraform-aws-alb-for-vpc-internal-requests/pull/18)
