@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.2.0
+
+- [Relax version constraints for modules](https://github.com/babbel/terraform-aws-alb-for-vpc-internal-requests/pull/18)
+
 ## v1.1.1
 
 - [Add default value for `ingress_security_groups` attribute](https://github.com/babbel/terraform-aws-alb-for-vpc-internal-requests/pull/14)
