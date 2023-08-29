@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.1
+
+- [Provide empty map as default for `tags` variable](https://github.com/babbel/terraform-aws-alb-for-vpc-internal-requests/pull/22)
+
 ## v2.0.0
 
 - [drop aws_security_group_rule attribute](https://github.com/babbel/terraform-aws-alb-for-vpc-internal-requests/pull/20)
