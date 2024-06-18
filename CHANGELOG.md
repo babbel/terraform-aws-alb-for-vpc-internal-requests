@@ -1,4 +1,7 @@
-# Changelog
+# NOTE: CHANGELOG.md is deprecated
+
+After the release of v2.0.1, please see the [GitHub release notes](https://github.com/babbel/terraform-aws-alb-for-vpc-internal-requests/releases)
+for the module in order to view the most up-to-date changes.
 
 ## v2.0.1
 
