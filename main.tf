@@ -36,6 +36,8 @@ resource "aws_lb" "this" {
 
   load_balancer_type = "application"
 
+  drop_invalid_header_fields = var.drop_invalid_header_fields
+
   internal        = true
   subnets         = var.subnets[*].id
   security_groups = [aws_security_group.this.id]

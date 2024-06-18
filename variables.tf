@@ -1,3 +1,10 @@
+variable "drop_invalid_header_fields" {
+  description = "Specify if the ALB should drop invalid header fields"
+
+  type    = bool
+  default = true
+}
+
 variable "ingress_port" {
   description = "The port the ALB will listen to"
 
