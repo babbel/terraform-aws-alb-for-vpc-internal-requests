@@ -8,7 +8,7 @@ resource "aws_security_group" "this" {
 
   tags = merge({
     Name = "LB: ${var.name}"
-  }, var.tags)
+  }, var.default_tags, var.security_group_tags)
 
   lifecycle {
     create_before_destroy = true
@@ -42,7 +42,7 @@ resource "aws_lb" "this" {
   subnets         = var.subnets[*].id
   security_groups = [aws_security_group.this.id]
 
-  tags = var.tags
+  tags = merge(var.default_tags, var.lb_tags)
 }
 
 resource "aws_lb_listener" "this" {
