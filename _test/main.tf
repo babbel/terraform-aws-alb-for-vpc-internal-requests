@@ -16,7 +16,7 @@ module "alb" {
 
   target_group = { arn = "arn:aws:elasticloadbalancing:local:123456789012:targetgroup/some-service/0123456789abcdef" }
 
-  tags = {
+  default_tags = {
     app = "some-service"
     env = "production"
   }
