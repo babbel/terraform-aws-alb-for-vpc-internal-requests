@@ -15,10 +15,5 @@ module "alb" {
   subnets = [aws_subnet.private_a, aws_subnet.private_b]
 
   target_group = aws_lb_target_group.example
-
-  tags = {
-    app = "example"
-    env = "production"
-  }
 }
 ```

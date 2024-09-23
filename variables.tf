@@ -1,3 +1,12 @@
+variable "default_tags" {
+  type    = map(string)
+  default = {}
+
+  description = <<EOS
+Map of tags assigned to all AWS resources created by this module.
+EOS
+}
+
 variable "drop_invalid_header_fields" {
   type    = bool
   default = true
@@ -33,15 +42,6 @@ variable "subnets" {
 
   description = <<EOS
 List of subnets the ALB will be created in.
-EOS
-}
-
-variable "tags" {
-  type    = map(string)
-  default = {}
-
-  description = <<EOS
-Map of tags assigned to all AWS resources created by this module.
 EOS
 }
 
