@@ -25,11 +25,29 @@ The port the ALB will listen to.
 EOS
 }
 
+variable "lb_tags" {
+  type    = map(string)
+  default = {}
+
+  description = <<EOS
+Map of tags assigned to the ALB.
+EOS
+}
+
 variable "name" {
   type = string
 
   description = <<EOS
 Name of the ALB.
+EOS
+}
+
+variable "security_group_tags" {
+  type    = map(string)
+  default = {}
+
+  description = <<EOS
+Map of tags assigned to the security group used by the ALB.
 EOS
 }
 
