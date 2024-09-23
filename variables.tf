@@ -30,7 +30,7 @@ variable "lb_tags" {
   default = {}
 
   description = <<EOS
-Map of tags assigned to the ALB.
+Map of tags assigned to the ALB created by this module. Tags in this map will override tags in `var.default_tags`.
 EOS
 }
 
@@ -47,7 +47,7 @@ variable "security_group_tags" {
   default = {}
 
   description = <<EOS
-Map of tags assigned to the security group used by the ALB.
+Map of tags assigned to the security group used by the ALB created by this module. Tags in this map will override tags in `var.default_tags`.
 EOS
 }
 
