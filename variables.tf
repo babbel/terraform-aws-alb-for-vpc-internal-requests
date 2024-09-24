@@ -25,11 +25,29 @@ The port the ALB will listen to.
 EOS
 }
 
+variable "lb_tags" {
+  type    = map(string)
+  default = {}
+
+  description = <<EOS
+Map of tags assigned to the ALB created by this module. Tags in this map will override tags in `var.default_tags`.
+EOS
+}
+
 variable "name" {
   type = string
 
   description = <<EOS
 Name of the ALB.
+EOS
+}
+
+variable "security_group_tags" {
+  type    = map(string)
+  default = {}
+
+  description = <<EOS
+Map of tags assigned to the security group used by the ALB created by this module. Tags in this map will override tags in `var.default_tags`.
 EOS
 }
 
